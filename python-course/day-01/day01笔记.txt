@@ -1,0 +1,41 @@
+## 要换行直接加个\（打印结果没换行）
+
+## 不要随便缩进
+
+## 字面量和变量
+	字面量就是一个一个的值，比如：1，2，3，‘hello’
+	
+	变量（variable） 变量就是用来保存的字面量是不确定的
+
+## 变量和标识符
+	
+	# 如果使用没有赋值过的变量 会报错 NameError: name 'b' is not defined
+	# 如果多了缩进会   报错  IndentationError: unexpected indent
+
+## ctrl + 回车  换行  
+
+## 出现中文符号 报错SyntaxError: invalid character in identifier 
+
+##字符串
+# 下面当时任何类型哦都可以拼接   用逗号隔开 
+print('a=' , a) # a= abc哈哈ha ha 
+
+# 在创建字符串时，可以在字符串中指定占位符
+# %s 在字符串中表示任意字符
+b = 'hello %s '%'孙悟空'
+c = 'hi %s '%'你好'		# hello 孙悟空 
+c = 'hi %s 我是 %s'%('Tom','孙悟空') # hi Tom 我是 孙悟空
+
+c = f'hello {a} {b} '
+
+
+## 对象的介绍
+	Python是一门强类型语言，对象一旦创建类型不再改变
+	对象一旦创建，它的id永远不会改变
+
+## 算术运算符
+  //整除   总会返回一个整型
+  ** 求幂
+
+
+# print（‘*’，end=‘’）不换行

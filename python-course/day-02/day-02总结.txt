@@ -1,0 +1,87 @@
+day-02总结.txt
+
+## 一  列表(里面的元素是可重复的)
+1  my_list = [10,20,30,40,500]
+2  lens()
+3  切片 
+        --stus = ['孙悟空','猪八戒','沙和尚','唐僧','蜘蛛精','白骨精']
+        --print(stus[-1])
+        --print(stus[-5:-2])
+        --print(stus[0:5:2])
+4 操作 
+        --stus = ['孙悟空','猪八戒','沙和尚','唐僧','蜘蛛精','白骨精']
+        -- +  和  *
+        --stus.index('猪八戒')
+        --stu.index('猪八戒',3,7)  第二个参数表示查找的起始位置,第三个是结束位置
+        -- 改  stus[0] = 'sunwukong'
+        -- 删  del stus[0] 
+        -- 改  stus[0:2] = 'hhh' # 字符串是个序列 # 先替换0:2  元素还有多就添加
+        -- 增  stus[n:n:1]  =[]  是将左边列表的所有元素插入到index为n之后的位置
+        -- 通过 ''.join([列表])可以将一个列表转换为字符串
+5 方法
+        -- append()
+        -- insert(n,元素)
+        -- stu.extend(stu1)     将一个序列添加到另一个
+        -- clear()
+        -- stu.pop(n)    删除指定index的元素  会返回值
+        -- remove()    删除指定的元素
+        -- reverse()
+        -- sort()
+5 range
+        --range(开始,结束,步长)
+
+
+
+##  二 元组
+1  my_tuple = (1,2,3,4,5)
+
+2  解包(即将元组当中每一个值给一个变量)
+        -- my_tuple = 1,2,3,4
+           a, b, *c = my_tuple    # c变成列表
+
+
+
+## 三 字典
+1  dict1 = {'name':'孙悟空','age':22,'gender':'男'}
+
+   d = dict(name = '孙悟空',age = 19, gender = '男')
+
+   d = [[1,2],[2,3]]
+
+   IndentationError: unexpected indent  使用了缩进报错
+
+2  -- print(d['name'])             获取key
+   -- print(d.get('name'))         获取value
+   -- print(d.get('none'))
+   -- result = d.setdefault('name','猪八戒')
+   --   d = {'a':1,'b':2,'c':3}
+        d1 = {'c':4,'d':5,'f':6}
+        print('修改前:',d)
+        d.update(d1)
+        print('修改后:',d)
+   -- del d['a']
+
+3 方法
+    -- d.update()
+    -- d.popitem()
+    -- d.pop('键')
+    -- d.copy()  浅复制
+
+
+## 四  集合
+
+1   s = {1,5,3,40,1,1,1,1}
+    ## s = {}    #这是空字典
+    s = set() # 这是空集合
+
+2   可以通过set() 将序列\字符串\字典转化成集合
+
+3   将集合转换成列表 list(s)
+
+4   方法
+        -- add()
+        -- update()
+        -- pop()
+        -- remove()
+        -- clear()
+        -- copy()

@@ -1,0 +1,24 @@
+常见dos命令
+1、dir 查看文件的命令
+2、cd
+3、. 表示当前目录
+4、md 创建目录
+   rd 删除目录
+   del 删除文件
+5、cls  清屏
+6、 命令的语法    命令 【参数】 【选项】
+
+
+文本文件
+文本分为纯文本和富文本（word文档）
+
+字符集是编码和解码时所采用的规则
+GB2312 GBK 是中国的
+unicode 万国码（utf-8 utf-16 utf-32）
+
+
+我安装python的路径：C:\Users\朱秉林\AppData\Local\Programs\Python\Python37
+
+python和sublime的整合
+1、ctrl+b 执行（这种执行方式i，在某些版本的sublime中对中文支持不好，并且不能执行iuput函数）
+2、使用sublimeREPL来运行python 代码
